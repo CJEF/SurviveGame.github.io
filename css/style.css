@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
+p {
+  margin: 0 0 10; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+.bigtitle {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF; }
+
+.btn--yellow {
+  background: linear-gradient(182.88deg, #FFB548 11.27%, #F3AF34 90.4%);
+  border-radius: 4px;
+  padding: 20px 22px;
+  border: none;
+  cursor: pointer;
+  outline: none; }
+  .btn--yellow:hover {
+    background: #ffb731; }
+
+.header {
+  position: absolute;
+  width: 100%; }
+  .header__inner {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .header__logo {
+    width: 55px;
+    height: 55px; }
+  .header .nav {
+    display: flex; }
+    .header .nav__menu a {
+      color: #fff;
+      text-transform: uppercase;
+      transition: color .2s linear; }
+      .header .nav__menu a + a {
+        margin-left: 38px; }
+      .header .nav__menu a:hover {
+        color: #FFB548; }
+    .header .nav__select {
+      margin-left: 150px; }
+      .header .nav__select-header {
+        display: flex;
+        position: relative;
+        cursor: pointer;
+        color: #fff;
+        transition: color .2s linear; }
+        .header .nav__select-header:hover {
+          color: #FFB548; }
+      .header .nav__select-body .is-active {
+        display: block; }
+      .header .nav__select-icon {
+        position: absolute;
+        padding-left: 25px;
+        bottom: 4px; }
+      .header .nav__select-item {
+        color: #fff; }
+      .header .nav__select-body {
+        display: none;
+        background-color: black;
+        border-radius: 4px;
+        padding: 5px 20px 5px 5px;
+        color: #fff;
+        transition: color .2s linear;
+        cursor: pointer; }
+        .header .nav__select-body:hover {
+          color: #FFB548; }
+      .header .nav__select-item a {
+        transition: color .2s linear; }
+        .header .nav__select-item a:hover {
+          color: #FFB548; }
+  .header__icons {
+    margin-left: 13px; }
+    .header__icons-xbox {
+      cursor: pointer;
+      width: 30px;
+      height: 27px; }
+    .header__icons-steam {
+      margin-left: 13px;
+      width: 30px;
+      height: 27px;
+      cursor: pointer; }
+
+.intro {
+  padding: 120px 0 192px 0;
+  background: url(../img/intro-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .intro__inner {
+    margin: 143px;
+    text-align: center; }
+  .intro__subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 22px; }
+  .intro__button {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1917; }
+  .intro__story {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .intro__story-text {
+      position: relative; }
+    .intro__story-icon {
+      position: absolute;
+      bottom: -83px; }
+
+/*# sourceMappingURL=style.css.map */
