@@ -106,7 +106,7 @@
                         <div class="gallery-container">
                           <img class="gallery-item" src="img/about-photo-1.jpg">
                           <img class="gallery-item" src="img/about-photo-2.jpg">
-                          <img class="gallery-item" src="img/about-photo-3.jpg">
+                          <img class="gallery-item" src="img/about-photo-1.jpg">
                           <img class="gallery-item" src="img/about-photo-2.jpg">
                           <img class="gallery-item" src="img/about-photo-3.jpg">
                         </div>
@@ -247,18 +247,20 @@
 
     <section class="subscribe" id="subscribe">
         <div class="container">
-            <div class="subscribe-content">
-                <h3 class="subscribe__content-subtitle">Want to stay in touch</h3>
-                <h1 class="subscribe-content__title bigtitle">Newsletter subscribe</h1>
-                <div class="subscribe-content__text text">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.</div>
-                <form action="#" class="subscribe-content__form">
-                    <p><label style="cursor: pointer;" class="" for="subscribeForm">Your  email address</label></p>
-                    <input autocomplete="off" class="subscribe-content__form-email" placeholder="Enter Your email address" type="email" name="subscribeForm" id="subscribeForm">
-                    <input class="subscribe-content__form-submit btn--yellow" type="submit" value="Subscribe now">
-                </form>
-            </div>
-            <div class="subscribe__photo">
-                <img src="img/subscribe.jpg" alt="subscribe!">
+            <div class="subscribe__inner">
+                <div class="subscribe-content">
+                    <h3 class="subscribe__content-subtitle">Want to stay in touch</h3>
+                    <h1 class="subscribe-content__title bigtitle">Newsletter subscribe</h1>
+                    <div class="subscribe-content__text text">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.</div>
+                    <form action="#" class="subscribe-content__form">
+                        <p><label style="cursor: pointer;" class="" for="subscribeForm">Your  email address</label></p>
+                        <input autocomplete="off" class="subscribe-content__form-email" placeholder="Enter Your email address" type="email" name="subscribeForm" id="subscribeForm">
+                        <input class="subscribe-content__form-submit btn--yellow" type="submit" value="Subscribe now">
+                    </form>
+                </div>
+                <div class="subscribe__photo">
+                    <img src="img/subscribe.jpg" alt="subscribe!">
+                </div>
             </div>
         </div>
     </section>
@@ -271,12 +273,16 @@
                 </div>
                 <nav class="footer-nav">
                     <div class="footer-nav__menu">
-                        <a href="#" class="nav__link" data-scroll="#intro">MAIN</a>
-                        <a href="#" class="nav__link" data-scroll="#about">ABOUT</a>
-                        <a href="#" class="nav__link" data-scroll="#features">GAME FEATURES</a>
-                        <a href="#" class="nav__link" data-scroll="#system">System requirements</a>
-                        <a href="#" class="nav__link" data-scroll="#quotes">quotes</a>
-                    </div>
+                        <div class="footer-nav__wrapper">
+                            <a href="#" class="nav__link" data-scroll="#intro">MAIN</a>
+                            <a href="#" class="nav__link" data-scroll="#about">ABOUT</a>
+                            <a href="#" class="nav__link" data-scroll="#features">GAME FEATURES</a>
+                        </div>
+                        <div class="footer-nav__wrapper-end">
+                            <a href="#" class="nav__link" data-scroll="#system">System requirements</a>
+                            <a href="#" class="nav__link" data-scroll="#quotes">quotes</a>
+                        </div>
+                    </div><!-- footer-nav__menu -->
                 </nav>
                 <div class="footer__social">
                     <a class="facebook footer__social-link">
@@ -304,7 +310,11 @@
             </div>    
             <div class="footer-end">
                 <div class="rights"> © 2020 Outpost Games, Inc. All Rights Reserved by CJEF</div>
-                <div class="privacy">Privacy Policy | Terms of Services | Code of Conduct </div>
+                <div class="privacy">
+                    <a>Privacy Policy</a> 
+                    <a class="privacy__link-center">Terms of Services</a> 
+                    <a>Code of Conduct</a> 
+                </div>
             </div>
         </div>
     </footer>

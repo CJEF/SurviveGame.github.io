@@ -21,7 +21,7 @@
 }
 
 .gallery-item.gallery-item-selected {
-  
+
   height: 450.52px;
   width: 350px;
   opacity: 1;
@@ -70,7 +70,7 @@
 }
 
 .gallery-controls button {
-  
+
   position: absolute;
   top: auto;
   right: -20px;
@@ -125,6 +125,13 @@
   position: absolute;
   right: -10px;
   top: 50%;
+}
+
+@media(max-width:576px) {
+  .gallery-controls-next::after {
+    z-index: 10;
+    right: -50px;
+  }
 }
 
 .gallery-nav {
